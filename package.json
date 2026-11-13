@@ -1,5 +1,5 @@
 {
-	"name": "vite-react-template",
+	"name": "mc-solver",
 	"description": "A template for building a React application with Vite, Hono, and Cloudflare Workers",
 	"cloudflare": {
 		"label": "Vite React Template",
@@ -12,23 +12,20 @@
 		"publish": true
 	},
 	"dependencies": {
+		"@tanstack/react-router": "^1.170.46",
 		"hono": "4.11.1",
 		"react": "19.2.1",
 		"react-dom": "19.2.1"
 	},
 	"devDependencies": {
 		"@cloudflare/vite-plugin": "1.52.1",
-		"@eslint/js": "9.39.1",
+		"@tanstack/router-plugin": "^1.169.0",
 		"@types/node": "24.10.1",
 		"@types/react": "19.2.7",
 		"@types/react-dom": "19.2.3",
 		"@vitejs/plugin-react": "5.1.1",
-		"eslint": "9.39.2",
-		"eslint-plugin-react-hooks": "7.0.1",
-		"eslint-plugin-react-refresh": "0.4.24",
-		"globals": "16.5.0",
+		"oxlint": "^1.93.0",
 		"typescript": "5.9.3",
-		"typescript-eslint": "8.48.0",
 		"vite": "^7.0.0",
 		"wrangler": "4.160.1"
 	},
@@ -39,7 +36,7 @@
 		"check": "tsc && vite build && wrangler deploy --dry-run",
 		"deploy": "wrangler deploy",
 		"dev": "vite",
-		"lint": "eslint .",
+		"lint": "oxlint",
 		"preview": "npm run build && vite preview"
 	},
 	"type": "module"
